@@ -2,6 +2,8 @@ import * as TodoService from "../../../services/todo.service.js";
 import { AuthenticationError } from "../../../utils/errors.js";
 
 export async function getByUserId(req) {
+  if(req.cookies.userId == "fdrg") throw new AuthenticationError("User stupid");
+  
   if (!req.cookies.userId) throw new AuthenticationError("User not logged");
   return await TodoService.getByUserId(req.cookies.userId);
 }
