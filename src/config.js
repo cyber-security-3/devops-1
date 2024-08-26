@@ -53,5 +53,6 @@ export const logger = {
 
 export const api = {
   port: process.env.API_PORT ? parseInt(process.env.API_PORT) : 4001,
-  host: process.env.API_HOST ? process.env.API_HOST : "127.0.0.1",
+  //host: process.env.API_HOST ? process.env.API_HOST : "127.0.0.1",
+  host: process.env.API_HOST || '0.0.0.0'
 };
