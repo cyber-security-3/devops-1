@@ -25,5 +25,3 @@ function mapUser(user) {
     lastName: user.last_name,
   };
 }
-
-https://aulab-it.zoom.us/meeting/register/tZ0kcuupqTkpHNdLmXXLDXdVtcluNgvm4dYG
